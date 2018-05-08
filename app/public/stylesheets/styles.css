@@ -1,0 +1,51 @@
+span {
+  color: #999;
+  padding: 10px;
+}
+
+span::before, span::after {
+  content: ' - ';
+}
+
+tr > th > a {
+  float: right;
+  cursor: pointer;
+  display: none;
+}
+
+tr:hover > th > a {
+  display: block;
+  color: #333;
+}
+
+tr:hover {
+  background: #fafafa;
+  cursor: pointer;
+}
+
+tr {
+  color: #333;
+  background: #fff;
+}
+
+th {
+  border-top: none !important;
+  border-bottom: 1px solid #ccc;
+}
+
+tr > th:first-child {
+  width: 80%
+}
+
+.jumbotron {
+  background-color: #2d2d2d !important;
+  color: white;
+}
+
+.no-padding {
+  padding: 0px;
+}
+
+.no-border-radius {
+  border-radius: 0px;
+}

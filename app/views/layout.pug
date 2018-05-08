@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/fontawesome.min.css')
+    link(rel='stylesheet', href='/stylesheets/styles.css')
+  body
+    div.container-fluid.no-padding
+      div.jumbotron.no-border-radius
+        h1= title
+        p We <3 hacker news!
+      block content
+    script(src='/javascripts/jquery.min.js')
+    script(src='/javascripts/bootstrap.min.js')
+    script.
+      jQuery(document).ready(function ($) {
+        $('.clickable').click(function () {
+          window.location = $(this).data('href')
+        })
+      })
